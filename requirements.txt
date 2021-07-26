@@ -1,0 +1,11 @@
+scipy==1.7.0
+torch==1.7.0+cu101
+h5py==3.3.0
+torchvision==0.8.1+cu101
+visdom.egg==info
+mediapipe==0.8.6
+loguru==0.5.3
+numpy==1.21.0
+opencv_python==4.5.2.54
+Pillow==8.3.1
+visdom==0.1.8.9
