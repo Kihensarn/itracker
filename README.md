@@ -5,6 +5,7 @@ This project is to learn about the process of gaze estimation. Among this projec
 * **Python** == 3.8
 * **Torch** == 1.7.0+cu101
 * **Visdom** == 0.1.8.9  
+
 More details in [requirements.txt](itracker/requirements.txt) file.
 ## File Structure
 * **itracker** 
