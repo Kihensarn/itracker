@@ -71,3 +71,22 @@ Test itracker model
 ```
 python xgaze_main.py --data_path [preprocessed dataset path] --train False --load True
 ```
+## Citation
+For itracker model, please cite:
+```
+@inproceedings{cvpr2016_gazecapture,
+Author = {Kyle Krafka and Aditya Khosla and Petr Kellnhofer and Harini Kannan and Suchendra Bhandarkar and Wojciech Matusik and Antonio Torralba},
+Title = {Eye Tracking for Everyone},
+Year = {2016},
+Booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+}
+```
+For ETH-Xgaze dataset, please cite:
+```
+@inproceedings{Zhang2020ETHXGaze,
+  author    = {Xucong Zhang and Seonwook Park and Thabo Beeler and Derek Bradley and Siyu Tang and Otmar Hilliges},
+  title     = {ETH-XGaze: A Large Scale Dataset for Gaze Estimation under Extreme Head Pose and Gaze Variation},
+  year      = {2020},
+  booktitle = {European Conference on Computer Vision (ECCV)}
+}
+```
