@@ -50,9 +50,10 @@ This directory stores the preprocessed data and the checkpoints. Detailed file s
 │   ├── model_dir
 │   │   ├── itracker
 │   │   ├── itracker_mhsa
+│   │   ├── ...
 ```
 ## Results
- model  | train_error  | val_error  | test_error
- ---- | ----- | ------ | ------  
- itracker  | 4.895 | 6.8864 | 9.6374 
- itracker_mhsa  | 3.7123 | 5.6807 | 8.3635  
+ model  | train_error  | val_error  | test_error  | test_error_std
+ ---- | ----- | ------ | ------ | ------  
+ itracker  | 4.895 | 6.8864 | 9.6374 | 9.1396 
+ itracker_mhsa  | 3.7123 | 5.6807 | 8.3635 | 8.8631  
