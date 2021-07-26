@@ -17,22 +17,42 @@ More details in [requirements.txt](itracker/requirements.txt) file.
     * **utils**  
     This directory contains some useful files to preprocess the dataset,evaluate the performance and so on.
 * **data**  
-This directory stores the preprocessed data and the checkpoints.And the detailed file structure is showed below.
+This directory stores the preprocessed data and the checkpoints. Detailed file structure is showed below.
 ```
 ├── data			
-│   ├── xgaze_224
-│   │   ├── train
-│   │   │   ├── subject0000.h5
-│   │   │   ├── ...
-│   │   ├── test
-│   │   │   ├── ...
-│   ├── xgaze_landmarks
-│   ├── train_eval_test_split.json
-├── checkpoints
-│   │   ├── botnet
+│   ├── train
+│   │   ├── subject0000
+│   │   │   ├── face
+│   │   │   |   ├── 000000.jpg
+│   │   │   |   ├── 000001.jpg
+│   │   │   |   ├── ...  
+│   │   │   ├── left_eye
+│   │   │   |   ├── 000000.jpg
+│   │   │   |   ├── 000001.jpg
+│   │   │   |   ├── ... 
+│   │   │   ├── right_eye
+│   │   │   |   ├── 000000.jpg
+│   │   │   |   ├── 000001.jpg
+│   │   │   |   ├── ... 
 │   │   ├── ...
-├── src1
-├── src2
-├── requirements.txt
-├── README.md
+│   ├── test
+│   │   ├── subject0001
+│   │   │   ├── face 
+│   │   │   ├── left_eye
+│   │   │   ├── right_eye
+│   │   ├── ...
+│   ├── val
+│   │   ├── subject0003
+│   │   │   ├── face 
+│   │   │   ├── left_eye
+│   │   │   ├── right_eye
+│   │   ├── ...
+│   ├── model_dir
+│   │   ├── itracker
+│   │   ├── itracker_mhsa
 ```
+## Results
+ model  | train_error  | val_error  | test_error
+ ---- | ----- | ------ | ------  
+ itracker  | 4.895 | 6.8864 | 9.6374 
+ itracker_mhsa  | 3.7123 | 5.6807 | 8.3635  
