@@ -59,14 +59,14 @@ This directory stores the preprocessed data and the checkpoints. Detailed file s
  itracker_mhsa  | 3.7123 | 5.6807 | 8.3635 | 8.8631  
 ## Usage
 Prepare the ETH-Xgaze dataset
-'''
+```
 python prepareXgaze.py --dataset_path [source dataset path] --outer_dataset_path [the directory to store preprocessed data]
-'''
+```
 Train itracker model
-'''
+```
 python xgaze_main.py --data_path [preprocessed dataset path] --train True --load False
-'''
+```
 Test itracker model
-'''
+```
 python xgaze_main.py --data_path [preprocessed dataset path] --train False --load True
-'''
+```
